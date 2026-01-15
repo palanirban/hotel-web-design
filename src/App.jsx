@@ -92,14 +92,14 @@ function App() {
                 <div>
                   <img
                     className="web-logo"
-                    src="/src/assets/logo.png"
+                    src="/assets/logo.png"
                     alt="logo"
                   />
                 </div>
                 <div className="book-section">
                   <span>Book now</span>
                   <div className="booking-logo">
-                    <img src="/src/assets/arrow.svg" alt="" />
+                    <img src="/assets/arrow.svg" alt="" />
                   </div>
                 </div>
               </div>
@@ -111,23 +111,23 @@ function App() {
                 <div className="booking">
                   <div className="booking-option">
                     <div className="option-item">
-                      <img src="/src/assets/plane-logo.svg" alt="" />
+                      <img src="/assets/plane-logo.svg" alt="" />
                       <p>Flights</p>
                     </div>
                     <div className="option-item">
-                      <img src="/src/assets/bus-logo.svg" alt="" />
+                      <img src="/assets/bus-logo.svg" alt="" />
                       <p>Buses</p>
                     </div>
                     <div className="active-option">
-                      <img src="/src/assets/hotel-logo.svg" alt="" />
+                      <img src="/assets/hotel-logo.svg" alt="" />
                       <p>Hotels</p>
                     </div>
                     <div className="option-item">
-                      <img src="/src/assets/train-logo.svg" alt="" />
+                      <img src="/assets/train-logo.svg" alt="" />
                       <p>Trains</p>
                     </div>
                     <div className="option-item">
-                      <img src="/src/assets/package-logo.svg" alt="" />
+                      <img src="/assets/package-logo.svg" alt="" />
                       <p>packages</p>
                     </div>
                   </div>
@@ -138,7 +138,7 @@ function App() {
                       </p>
                       <div className="hotel-attribute">
                         <h2 className="title">Italy</h2>
-                        <img src="/src/assets/dropdown.svg" alt="" />
+                        <img src="/assets/dropdown.svg" alt="" />
                       </div>
                       <input
                         type="text"
@@ -152,7 +152,7 @@ function App() {
                         <h2 className="title">
                           12 <span className="attribute">Jan'26</span>
                         </h2>
-                        <img src="/src/assets/dropdown.svg" alt="" />
+                        <img src="/assets/dropdown.svg" alt="" />
                       </div>
                       <input
                         type="text"
@@ -166,7 +166,7 @@ function App() {
                         <h2 className="title">
                           12 <span className="attribute">Jan'26</span>
                         </h2>
-                        <img src="/src/assets/dropdown.svg" alt="" />
+                        <img src="/assets/dropdown.svg" alt="" />
                       </div>
                       <input
                         type="text"
@@ -181,7 +181,7 @@ function App() {
                           1 <span className="attribute">Room</span>, 2{" "}
                           <span className="attribute">guests</span>
                         </h2>
-                        <img src="/src/assets/dropdown.svg" alt="" />
+                        <img src="/assets/dropdown.svg" alt="" />
                       </div>
                       <input
                         type="text"
@@ -205,7 +205,7 @@ function App() {
           <div className="hero-content">
             <div className="hero-start">
               <p>Let's know Us</p>
-              <img src="/src/assets/right-arrow.svg" alt="" />
+              <img src="/assets/right-arrow.svg" alt="" />
             </div>
             <div className="hero-info">
               <h1>
@@ -223,7 +223,7 @@ function App() {
                 <div className="learn-more">
                   <span>Learn More</span>
                   <div className="booking-logo">
-                    <img src="/src/assets/arrow.svg" alt="" />
+                    <img src="/assets/arrow.svg" alt="" />
                   </div>
                 </div>
               </div>
@@ -242,7 +242,7 @@ function App() {
                         <div className="location-logo">
                           <img
                             className="logo"
-                            src="/src/assets/location.svg"
+                            src="/assets/location.svg"
                             alt=""
                           />
                         </div>
@@ -251,7 +251,7 @@ function App() {
                         </span>
                       </div>
                       <div className="booking-logo">
-                        <img src="/src/assets/arrow.svg" alt="" />
+                        <img src="/assets/arrow.svg" alt="" />
                       </div>
                     </div>
                   </div>
@@ -275,7 +275,7 @@ function App() {
                               <div className="location-logo">
                                 <img
                                   className="logo"
-                                  src="/src/assets/location.svg"
+                                  src="/assets/location.svg"
                                   alt=""
                                 />
                               </div>
@@ -284,7 +284,7 @@ function App() {
                               </span>
                             </div>
                             <div className="booking-logo">
-                              <img src="/src/assets/arrow.svg" alt="" />
+                              <img src="/assets/arrow.svg" alt="" />
                             </div>
                           </div>
                         </div>
@@ -299,10 +299,10 @@ function App() {
                       </p>
                       <div className="slider-buttons">
                         <button className="buttons" onClick={movetoPrev}>
-                          <img src="/src/assets/right-arrow.svg" alt="" />
+                          <img src="/assets/right-arrow.svg" alt="" />
                         </button>
                         <button className="buttons" onClick={movetoNext}>
-                          <img src="/src/assets/right-arrow.svg" alt="" />
+                          <img src="/assets/right-arrow.svg" alt="" />
                         </button>
                       </div>
                     </div>
@@ -323,7 +323,7 @@ function App() {
                               <div className="location-logo">
                                 <img
                                   className="logo"
-                                  src="/src/assets/location.svg"
+                                  src="/assets/location.svg"
                                   alt=""
                                 />
                               </div>
@@ -332,7 +332,7 @@ function App() {
                               </span>
                             </div>
                             <div className="booking-logo">
-                              <img src="/src/assets/arrow.svg" alt="" />
+                              <img src="/assets/arrow.svg" alt="" />
                             </div>
                           </div>
                         </div>
@@ -347,10 +347,10 @@ function App() {
                       </p>
                       <div className="slider-buttons">
                         <button className="buttons" onClick={movetoPrev}>
-                          <img src="/src/assets/right-arrow.svg" alt="" />
+                          <img src="/assets/right-arrow.svg" alt="" />
                         </button>
                         <button className="buttons" onClick={movetoNext}>
-                          <img src="/src/assets/right-arrow.svg" alt="" />
+                          <img src="/assets/right-arrow.svg" alt="" />
                         </button>
                       </div>
                     </div>
@@ -369,7 +369,7 @@ function App() {
           <div className="mid-start">
             <div className="left-section-content">
               <div className="sunlogo">
-                <img src="/src/assets/sunlight.svg" alt="" />
+                <img src="/assets/sunlight.svg" alt="" />
               </div>
               <div className="middle-info">
                 {midData.map((item) => (
@@ -392,7 +392,7 @@ function App() {
                   <div className="slider-start">
                     <div className="midImage">
                       <img
-                        src="/src/assets/room.png"
+                        src="/assets/room.png"
                         alt=""
                         className="midPic"
                       />
@@ -406,7 +406,7 @@ function App() {
                       <div className="details">
                         <span>See Details</span>
                         <div className="booking-logo">
-                          <img src="/src/assets/arrow.svg" alt="" />
+                          <img src="/assets/arrow.svg" alt="" />
                         </div>
                       </div>
                       <div className="mid-slider-buttons">
@@ -417,7 +417,7 @@ function App() {
                               midSlider.current.slickPrev();
                             }}
                           >
-                            <img src="/src/assets/right-arrow.svg" alt="" />
+                            <img src="/assets/right-arrow.svg" alt="" />
                           </button>
                           <button
                             className="buttons"
@@ -425,7 +425,7 @@ function App() {
                               midSlider.current.slickNext();
                             }}
                           >
-                            <img src="/src/assets/right-arrow.svg" alt="" />
+                            <img src="/assets/right-arrow.svg" alt="" />
                           </button>
                         </div>
                       </div>
@@ -434,7 +434,7 @@ function App() {
                   <div className="slider-start">
                     <div>
                       <img
-                        src="/src/assets/hotel.png"
+                        src="/assets/hotel.png"
                         alt=""
                         className="midPic"
                       />
@@ -448,7 +448,7 @@ function App() {
                       <div className="details">
                         <span>See Details</span>
                         <div className="booking-logo">
-                          <img src="/src/assets/arrow.svg" alt="" />
+                          <img src="/assets/arrow.svg" alt="" />
                         </div>
                       </div>
                       <div className="mid-slider-buttons">
@@ -459,7 +459,7 @@ function App() {
                               midSlider.current.slickPrev();
                             }}
                           >
-                            <img src="/src/assets/right-arrow.svg" alt="" />
+                            <img src="/assets/right-arrow.svg" alt="" />
                           </button>
                           <button
                             className="buttons"
@@ -467,7 +467,7 @@ function App() {
                               midSlider.current.slickNext();
                             }}
                           >
-                            <img src="/src/assets/right-arrow.svg" alt="" />
+                            <img src="/assets/right-arrow.svg" alt="" />
                           </button>
                         </div>
                       </div>
@@ -489,7 +489,7 @@ function App() {
                 <div className="right-content">
                   <div className="image-right">
                     <img
-                      src="/src/assets/room3.jpg"
+                      src="/assets/room3.jpg"
                       alt=""
                       className="rightPic"
                     />
@@ -499,7 +499,7 @@ function App() {
                   </div>
                   <div className="right-footer">
                     <img
-                      src="/src/assets/star.svg"
+                      src="/assets/star.svg"
                       alt=""
                       className="right-footer-image"
                     />
@@ -536,7 +536,7 @@ function App() {
                   placeholder="Search Here.."
                 />
                 <img
-                  src="/src/assets/search.svg"
+                  src="/assets/search.svg"
                   alt=""
                   className="search-icon"
                 />
@@ -547,10 +547,10 @@ function App() {
                 <div className="hotel-card">
                   <div className="cards-content">
                     <div className="hotel-card-image">
-                      <img src="/src/assets/hotel-img1.png" alt="" className="image-size"/>
+                      <img src="/assets/hotel-img1.png" alt="" className="image-size"/>
                     </div>
                     <div className="card-logo">
-                      <img src="/src/assets/heart.svg" alt="" />
+                      <img src="/assets/heart.svg" alt="" />
                     </div>
                     <div className="card-price">
                       <span className="hotel-price">$2500/Per Day</span>
@@ -561,7 +561,7 @@ function App() {
                         <p>Crystal View Hotel</p>
                       </div>
                       <div className="hotel-footer-logo">
-                        <img src="/src/assets/arrow.svg" alt="" />
+                        <img src="/assets/arrow.svg" alt="" />
                       </div>
                     </div>
                   </div>
@@ -569,10 +569,10 @@ function App() {
                 <div className="hotel-card">
                   <div className="cards-content">
                     <div className="hotel-card-image">
-                      <img src="/src/assets/hotel-img2.png" alt="" className="image-size"/>
+                      <img src="/assets/hotel-img2.png" alt="" className="image-size"/>
                     </div>
                     <div className="card-logo">
-                      <img src="/src/assets/heart.svg" alt="" />
+                      <img src="/assets/heart.svg" alt="" />
                     </div>
                     <div className="card-price">
                       <span className="hotel-price">$2500/Per Day</span>
@@ -583,7 +583,7 @@ function App() {
                         <p>Crystal View Hotel</p>
                       </div>
                       <div className="hotel-footer-logo">
-                        <img src="/src/assets/arrow.svg" alt="" />
+                        <img src="/assets/arrow.svg" alt="" />
                       </div>
                     </div>
                   </div>
@@ -591,10 +591,10 @@ function App() {
                 <div className="hotel-card">
                   <div className="cards-content">
                     <div className="hotel-card-image">
-                      <img src="/src/assets/hotel-img3.png" alt="" className="image-size"/>
+                      <img src="/assets/hotel-img3.png" alt="" className="image-size"/>
                     </div>
                     <div className="card-logo">
-                      <img src="/src/assets/heart.svg" alt="" />
+                      <img src="/assets/heart.svg" alt="" />
                     </div>
                     <div className="card-price">
                       <span className="hotel-price">$2500/Per Day</span>
@@ -605,7 +605,7 @@ function App() {
                         <p>Crystal View Hotel</p>
                       </div>
                       <div className="hotel-footer-logo">
-                        <img src="/src/assets/arrow.svg" alt="" />
+                        <img src="/assets/arrow.svg" alt="" />
                       </div>
                     </div>
                   </div>
@@ -613,10 +613,10 @@ function App() {
                 <div className="hotel-card">
                   <div className="cards-content">
                     <div className="hotel-card-image">
-                      <img src="/src/assets/hotel-img4.png" alt="" className="image-size"/>
+                      <img src="/assets/hotel-img4.png" alt="" className="image-size"/>
                     </div>
                     <div className="card-logo">
-                      <img src="/src/assets/heart.svg" alt="" />
+                      <img src="/assets/heart.svg" alt="" />
                     </div>
                     <div className="card-price">
                       <span className="hotel-price">$2500/Per Day</span>
@@ -627,7 +627,7 @@ function App() {
                         <p>Crystal View Hotel</p>
                       </div>
                       <div className="hotel-footer-logo">
-                        <img src="/src/assets/arrow.svg" alt="" />
+                        <img src="/assets/arrow.svg" alt="" />
                       </div>
                     </div>
                   </div>
@@ -641,7 +641,7 @@ function App() {
                       hotelSlider.current.slickPrev();
                     }}
                   >
-                    <img src="/src/assets/right-arrow.svg" alt="" />
+                    <img src="/assets/right-arrow.svg" alt="" />
                   </button>
                   <button
                     className="buttons"
@@ -649,7 +649,7 @@ function App() {
                       hotelSlider.current.slickNext();
                     }}
                   >
-                    <img src="/src/assets/right-arrow.svg" alt="" />
+                    <img src="/assets/right-arrow.svg" alt="" />
                   </button>
                 </div>
                 <p className="card-footer-info">
@@ -668,7 +668,7 @@ function App() {
           <div className="hero-content">
             <div className="hero-start">
               <p>Explore Hotel</p>
-              <img src="/src/assets/right-arrow.svg" alt="" />
+              <img src="/assets/right-arrow.svg" alt="" />
             </div>
             <div className="hero-info">
               <h1>
@@ -686,18 +686,18 @@ function App() {
                 Get Started
               </span>
               <div className="booking-logo">
-                <img src="/src/assets/arrow.svg" alt="" />
+                <img src="/assets/arrow.svg" alt="" />
               </div>
             </div>
             <div className="discover-mid">
               <div className="img-cont1">
-                <img src="/src/assets/img1.png" className="disc-img" alt="" />
+                <img src="/assets/img1.png" className="disc-img" alt="" />
               </div>
               <div className="img-cont2">
-                <img src="/src/assets/img2.png" className="disc-img" alt="" />
+                <img src="/assets/img2.png" className="disc-img" alt="" />
               </div>
               <div className="img-cont3">
-                <img src="/src/assets/img3.png" className="disc-img" alt="" />
+                <img src="/assets/img3.png" className="disc-img" alt="" />
               </div>
               <div className="img-cont4">
                 <div className="contact-card">
@@ -715,16 +715,16 @@ function App() {
                   <div className="contact-card-info">
                     <p style={{ fontSize: "11px" }}>Support@Jetters.com</p>
                     <div className="booking-logo">
-                      <img src="/src/assets/arrow.svg" alt="" />
+                      <img src="/assets/arrow.svg" alt="" />
                     </div>
                   </div>
                 </div>
               </div>
               <div className="img-cont5">
-                <img src="/src/assets/img4.png" className="disc-img" alt="" />
+                <img src="/assets/img4.png" className="disc-img" alt="" />
               </div>
               <div className="img-cont6">
-                <img src="/src/assets/img5.png" className="disc-img" alt="" />
+                <img src="/assets/img5.png" className="disc-img" alt="" />
               </div>
             </div>
 
@@ -737,7 +737,7 @@ function App() {
               </h4>
               <div className="info-profile">
                 <img
-                  src="/src/assets/profile.png"
+                  src="/assets/profile.png"
                   alt=""
                   className="profile-img"
                 />
@@ -755,10 +755,10 @@ function App() {
         <div className="footer-back">
           <div className="container">
             <div className="company-title">
-              <img src="/src/assets/hotel.png" alt="" className="company-img"/>
+              <img src="/assets/hotel.png" alt="" className="company-img"/>
               <span className="company">Jettrs-Contact</span>
               <div className="right-image">
-                <img src="/src/assets/hotel.png" alt="" className="company-img2"/>
+                <img src="/assets/hotel.png" alt="" className="company-img2"/>
               </div>
             </div>
             <div className="btm-footer">
@@ -769,11 +769,11 @@ function App() {
                 <div className="contact">
                   <div className="contact-item">
                     <p>About us</p>
-                    <img src="/src/assets/forward.svg" alt="" />
+                    <img src="/assets/forward.svg" alt="" />
                   </div>
                   <div className="contact-item">
                     <p>FAQ</p>
-                    <img src="/src/assets/forward.svg" alt="" />
+                    <img src="/assets/forward.svg" alt="" />
                   </div>
                   <p>Contact Us</p>
                 </div>
@@ -785,10 +785,10 @@ function App() {
                   Experiences
                 </p>
                 <div className="footer-img">
-                  <img src="/src/assets/fb.svg" alt="" className="img-border"/>
-                  <img src="/src/assets/insta.svg" alt="" className="img-border"/>
-                  <img src="/src/assets/twitter.svg" alt="" className="img-border"/>
-                  <img src="/src/assets/wp.svg" alt="" className="img-border"/>
+                  <img src="/assets/fb.svg" alt="" className="img-border"/>
+                  <img src="/assets/insta.svg" alt="" className="img-border"/>
+                  <img src="/assets/twitter.svg" alt="" className="img-border"/>
+                  <img src="/assets/wp.svg" alt="" className="img-border"/>
                 </div>
               </div>
               <div className="help">

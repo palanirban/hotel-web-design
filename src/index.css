@@ -5,7 +5,7 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 .main-header{
-  background-image: url('/src/assets/header-bg.png');
+  background-image: url('/assets/header-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -223,7 +223,7 @@ input{
 .hero-card-middle{
   height: 260px;
   margin: 0 auto;
-  background-image: url('/src/assets/room.png');
+  background-image: url('/assets/room.png');
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 15px;
@@ -308,7 +308,7 @@ input{
 .slider-card-middle{
   height: 180px;
   margin: 0 auto;
-  background-image: url('/src/assets/room.png');
+  background-image: url('/assets/room.png');
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 15px;
@@ -774,7 +774,7 @@ input{
 }
 
 .footer-section{
-  background-image: url('/src/assets/footer.png');
+  background-image: url('/assets/footer.png');
   background-position: center;
   background-size: cover;
 }
