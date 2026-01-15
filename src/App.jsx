@@ -392,7 +392,7 @@ function App() {
                   <div className="slider-start">
                     <div className="midImage">
                       <img
-                        src="Images\room.png"
+                        src="Images\room2.png"
                         alt=""
                         className="midPic"
                       />
