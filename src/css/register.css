@@ -1,0 +1,160 @@
+.main {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* .bg-img{} */
+/* .left-section{
+    height: 90%;
+} */
+
+.img1 {
+  position: relative;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.img2 {
+  width: 300px;
+  position: absolute;
+  left: 10%;
+  top: 20%;
+}
+
+.bg-logo {
+  width: 100%;
+}
+
+.right-section {
+  height: 100vh;
+  background-color: #d3d1ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-start {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.f-header {
+  font-size: large;
+  font-weight: 600;
+}
+
+.f-mid {
+  width: 100%;
+  text-align: center;
+}
+
+.mid-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.fields {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.i-field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-size: small;
+  gap: 8px;
+  color: rgb(58, 58, 58);
+}
+
+.input-fields {
+  width: 94%;
+  padding: 12px;
+  border-radius: 15px;
+}
+
+.pass {
+  display: flex;
+  justify-content: end;
+  font-size: 10px;
+  margin-top: 4px;
+}
+
+.login {
+  background-color: blue;
+  color: #ffffff;
+  border-radius: 12px;
+  font-size: small;
+}
+
+.submit {
+  padding: 10px;
+}
+
+.signIn {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.dash {
+  height: 1px;
+  background-color: rgba(53, 52, 52, 0.452);
+  width: 50%;
+}
+
+.title {
+  width: 100%;
+  font-size: small;
+  text-align: center;
+  color: rgba(53, 52, 52, 0.452);
+}
+
+.icons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.i-br {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 8px 20px 8px 20px;
+  border-radius: 8px;
+}
+
+.icon-img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer {
+  font-size: small;
+}
+
+@media (max-width: 768px) {
+  .left-section {
+    display: none;
+  }
+  .main {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .footer {
+    font-size: x-small;
+  }
+}
