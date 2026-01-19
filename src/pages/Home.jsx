@@ -106,7 +106,7 @@ function Home() {
               <div>
                 <div className="header-mid">
                   <span>Discover the best destinations in the world</span>
-                  <p>Stay In The Moment</p>
+                  <span>Stay In The Moment</span>
                 </div>
                 <div className="booking">
                   <div className="booking-option">
@@ -128,7 +128,7 @@ function Home() {
                     </div>
                     <div className="option-item">
                       <img src="Images\package-logo.svg" alt="" />
-                      <p>packages</p>
+                      <p>Packages</p>
                     </div>
                   </div>
                   <div className="booking-items">
@@ -137,7 +137,7 @@ function Home() {
                         Select City, Location or Hotel Name
                       </p>
                       <div className="hotel-attribute">
-                        <h2 className="title">Italy</h2>
+                        <p className="title">Italy</p>
                         <img src="Images\dropdown.svg" alt="" />
                       </div>
                       <input
@@ -149,9 +149,9 @@ function Home() {
                     <div>
                       <p className="attribute-name">Check-in Date</p>
                       <div className="hotel-attribute">
-                        <h2 className="title">
+                        <p className="title">
                           12 <span className="attribute">Jan'26</span>
-                        </h2>
+                        </p>
                         <img src="Images\dropdown.svg" alt="" />
                       </div>
                       <input
@@ -163,9 +163,9 @@ function Home() {
                     <div>
                       <p className="attribute-name">Checkout Date</p>
                       <div className="hotel-attribute">
-                        <h2 className="title">
+                        <p className="title">
                           12 <span className="attribute">Jan'26</span>
-                        </h2>
+                        </p>
                         <img src="Images\dropdown.svg" alt="" />
                       </div>
                       <input
@@ -177,10 +177,10 @@ function Home() {
                     <div>
                       <p className="attribute-name">Room & Guest</p>
                       <div className="hotel-attribute">
-                        <h2 className="title">
+                        <p className="title">
                           1 <span className="attribute">Room</span>, 2{" "}
                           <span className="attribute">guests</span>
-                        </h2>
+                        </p>
                         <img src="Images\dropdown.svg" alt="" />
                       </div>
                       <input
@@ -204,22 +204,22 @@ function Home() {
         <div className="container">
           <div className="hero-content">
             <div className="hero-start">
-              <p>Let's know Us</p>
+              <span>Let's know Us</span>
               <img src="Images\right-arrow.svg" alt="" />
             </div>
             <div className="hero-info">
-              <h1>
+              <span className="heading">
                 Explore Stays, About Comfort, Your Stay <br />
                 Our Priority
-              </h1>
+              </span>
             </div>
             <div className="hero-cards">
               <div>
                 <span className="card-text">About us</span>
-                <h3>
+                <p className="h-text">
                   Sunrise is a trusted platform <br /> connecting travelers with{" "}
                   <br /> top hotels across the <br /> country
-                </h3>
+                </p>
                 <div className="learn-more">
                   <span>Learn More</span>
                   <div className="booking-logo">
@@ -231,7 +231,9 @@ function Home() {
                 <div className="hero-card-background">
                   <div className="card-wrapper">
                     <div className="card-header">
-                      <span className="card-info">Outdoor area</span>
+                      <div className="card-info">
+                        <span >Outdoor area</span>
+                      </div>
                       <span className="more-info">
                         A Versatile platform <br /> Offering a wide range of{" "}
                         <br /> hotel options and services
@@ -264,11 +266,7 @@ function Home() {
                       <div className="slider-card-background">
                         <div className="card-wrapper">
                           <div className="card-header">
-                            <span className="card-info">Outdoor area</span>
-                            <span className="more-info">
-                              A Versatile platform <br /> Offering a wide range
-                              of <br /> hotel options and services
-                            </span>
+                            <span className="card-info">Outdoor</span>
                           </div>
                           <div className="card-footer">
                             <div className="card-footer-item">
@@ -478,7 +476,7 @@ function Home() {
               </div>
               <div className="right-section-container">
                 <div className="right-header">
-                  <span>
+                  <span className="heading">
                     Discover Excellence <br />
                     in Hospitality. Trusted
                     <br />
@@ -528,7 +526,7 @@ function Home() {
             <div className="hotel-header">
               <div className="hotel-info">
                 <span className="header-text">facilities</span>
-                <h1>Explore Best Hotel</h1>
+                <p className="heading">Explore Best Hotel</p>
               </div>
               <div className="search-bar">
                 <input
@@ -614,6 +612,28 @@ function Home() {
                 <div className="hotel-card">
                   <div className="cards-content">
                     <div className="hotel-card-image">
+                      <img src="Images\hotel-img2.png" alt="" className="image-size"/>
+                    </div>
+                    <div className="card-logo">
+                      <img src="Images\heart.svg" alt="" />
+                    </div>
+                    <div className="card-price">
+                      <span className="hotel-price">$2500/Per Day</span>
+                    </div>
+                    <div className="hotel-card-footer">
+                      <div>
+                        <p className="footer-btn">Hotel In Dubai</p>
+                        <p>Crystal View Hotel</p>
+                      </div>
+                      <div className="hotel-footer-logo">
+                        <img src="Images\arrow.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="hotel-card">
+                  <div className="cards-content">
+                    <div className="hotel-card-image">
                       <img src="Images\hotel-img4.png" alt="" className="image-size"/>
                     </div>
                     <div className="card-logo">
@@ -672,7 +692,7 @@ function Home() {
               <img src="Images\right-arrow.svg" alt="" />
             </div>
             <div className="hero-info">
-              <h1>
+              <h1 className="heading">
                 Discover top hotel Options nearby <br />
                 Effortless hotel booking, tailored for you
               </h1>
@@ -702,19 +722,14 @@ function Home() {
               </div>
               <div className="img-cont4">
                 <div className="contact-card">
-                  <p
-                    style={{
-                      fontSize: "12px",
-                      textAlign: "center",
-                      lineHeight: "1.6",
-                    }}
+                  <p className="f-text"
                   >
                     Join Our Community Of <br />
                     Travelers and experience <br />
                     Unforgettable Stays
                   </p>
                   <div className="contact-card-info">
-                    <p style={{ fontSize: "11px" }}>Support@Jetters.com</p>
+                    <p style={{ fontSize: "10px" }}>Support@Jetters.com</p>
                     <div className="booking-logo">
                       <img src="Images\arrow.svg" alt="" />
                     </div>

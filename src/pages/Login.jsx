@@ -42,7 +42,7 @@ export default function Login() {
             </div>
             <div className="signIn">
               <div className="dash"></div>
-              <div className="title">
+              <div className="title-sign">
                 <p>sign in with</p>
               </div>
               <div className="dash"></div>

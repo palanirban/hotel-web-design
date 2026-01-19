@@ -33,6 +33,9 @@ body{
   gap: 2rem;
 }
 
+.web-logo{
+  width: 80%;
+}
 
 .book-section{
   background-color: blue;
@@ -44,7 +47,7 @@ body{
   padding: 8px 10px 8px 10px;
   border-radius: 25px;
   cursor: pointer;
-  font-size: smaller;
+  font-size: small;
   text-decoration: none;
 }
 
@@ -64,15 +67,16 @@ body{
   flex-direction: column;
   color: white;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .header-mid :first-child{
-  font-weight: bold;
+  font-weight: 500;
   font-size: 3rem;
 }
 
 .header-mid :last-child{
-  font-weight: bold;
+  font-weight: 500;
   font-size: 2rem;
 }
 
@@ -99,6 +103,8 @@ body{
   border-radius: 16px;
   line-height: 0;
   padding: 0 1rem 0 1rem;
+  font-size: small;
+  font-weight: 500;
 }
 
 .active-option{
@@ -112,6 +118,8 @@ body{
   border-radius: 16px;
   line-height: 0;
   padding: 0 1rem 0 1rem;
+  font-size: small;
+  font-weight: 500;
 }
 
 .booking-items{
@@ -126,12 +134,16 @@ body{
 
 .attribute-name{
   line-height: 0;
-  font-size: smaller;
+  font-size: small;
   color: rgb(77, 76, 76);
 }
 
 .title{
   line-height: 0;
+  font-size: larger;
+  color: black;
+  font-weight: 600;
+  text-align: start;
 }
 
 .hotel-attribute{
@@ -177,21 +189,24 @@ input{
   border: 1px solid rgba(58, 58, 58, 0.938) ;
   border-radius: 25px;
   display: flex;
-  font-size: smaller;
+  font-size: 10px;
   justify-content: center;
   align-items: center;
   gap: 4px;
-  padding: 0 1rem 0 1rem;
+  padding: 6px 1rem 6px 1rem;
   cursor: pointer;
 }
 
 .hero-info{
   text-align: center;
-  font-size: large;
+}
+
+.heading{
+  font-weight: 500;
+  font-size: 2.5rem;
 }
 
 .hero-cards{
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, minmax(0,1fr));
   justify-content: center;
@@ -203,7 +218,12 @@ input{
   text-align: center;
   border: 1px solid rgba(58, 58, 58, 0.938) ;
   border-radius: 25px;
-  padding: 8px;
+  padding: 6px;
+}
+
+.h-text{
+  font-size: larger;
+  font-weight: 500;
 }
 
 .learn-more{
@@ -227,6 +247,7 @@ input{
   background-image: url('/assets/room.png');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   border-radius: 15px;
 }
 
@@ -249,15 +270,16 @@ input{
 .card-header{
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 8px;
+  align-items: start;
+  padding: 8px 1.5rem 0 1.5rem;
+  gap: 1rem;
 }
 
 .card-info{
-  font-size: small;
+  font-size: x-small;
   color: rgba(255, 255, 255, 0.774);
   text-align: center;
-  padding: 8px;
+  padding: 4px;
   border: 1px solid rgba(255, 255, 255, 0.774);
   border-radius: 25px;
 }
@@ -286,14 +308,17 @@ input{
 }
 
 .location-logo{
-  padding: 4px;
-  background-color: rgb(179, 189, 245);
-  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo{
   width: 12px;
   height: 12px;
+  padding: 4px;
+  background-color: rgb(202, 202, 202);
+  border-radius: 100%;
 }
 
 .location-title{
@@ -346,9 +371,9 @@ input{
 }
 
 .slider-footer-text{
-  font-size: x-small;
+  font-size: xx-small;
   color: rgba(5, 5, 5, 0.596);
-  font-weight: bold;
+  font-size: 700;
 }
 
 .slider-buttons{
@@ -493,10 +518,8 @@ input{
 }
 
 .right-header{
-  font-size: 40px;
-  font-weight: 600;
   margin-bottom: 1rem;
-  text-align: center;
+  text-align: start;
 }
 
 .right-content{
@@ -681,7 +704,7 @@ input{
 }
 
 .card-footer-info{
-  font-size: small;
+  font-size: x-small;
   color: gray;
 }
 
@@ -723,6 +746,11 @@ input{
   color: white;
   padding: 1rem;
   border-radius: 25px;
+}
+
+.f-text{
+  font-size: 12px;
+  text-align: center;
 }
 
 .contact-card-info{
@@ -786,7 +814,7 @@ input{
 
 .company{
   color: white;
-  font-size: 9.5rem;
+  font-size: 8rem;
   text-align: center;
   margin-top: 7rem;
   margin-bottom: 6rem;
@@ -858,6 +886,29 @@ input{
     grid-template-columns: repeat(1, minmax(0,1fr));
     gap: 4px;
   }
+
+  .heading{
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .header-mid :first-child{
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.header-mid :last-child{
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.f-text{
+  font-size: x-small;
+}
+
+.disc-img{
+  width: 100%;
+}
 }
 
 @media (min-width: 568px) and (max-width: 1024px){

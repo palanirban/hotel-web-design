@@ -100,7 +100,6 @@
 .signIn {
   width: 100%;
   display: flex;
-  gap: 8px;
   justify-content: center;
   align-items: center;
 }
@@ -108,13 +107,14 @@
 .dash {
   height: 1px;
   background-color: rgba(53, 52, 52, 0.452);
-  width: 50%;
 }
 
-.title {
+.title-sign {
   width: 100%;
-  font-size: small;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
   color: rgba(53, 52, 52, 0.452);
 }
 
