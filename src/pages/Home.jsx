@@ -220,12 +220,12 @@ function Home() {
                   Sunrise is a trusted platform <br /> connecting travelers with{" "}
                   <br /> top hotels across the <br /> country
                 </p>
-                <div className="learn-more">
+                <Link to="/details" className="learn-more">
                   <span>Learn More</span>
                   <div className="booking-logo">
                     <img src="Images\arrow.svg" alt="" />
                   </div>
-                </div>
+                </Link>
               </div>
               <div className="hero-card-middle">
                 <div className="hero-card-background">

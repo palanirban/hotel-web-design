@@ -239,6 +239,7 @@ input{
   padding: 8px 0 8px 0;
   gap: 8px;
   border-radius: 25px;
+  text-decoration: none;
 }
 
 .hero-card-middle{
@@ -908,6 +909,10 @@ input{
 
 .disc-img{
   width: 100%;
+}
+
+.container{
+  max-width: 90%;
 }
 }
 
