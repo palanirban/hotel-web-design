@@ -15,9 +15,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 36px;
+  width: 64px;
   padding: 6px 1rem 6px 1rem;
-  background-color: rgb(151, 15, 15);
 }
 
 .dash-content {

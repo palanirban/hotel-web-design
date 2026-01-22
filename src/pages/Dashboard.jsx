@@ -39,8 +39,7 @@ export default function Dashboard() {
     <>
       <nav className="dash-nav">
         <div className="dash-logo">
-          <img src="Images\lg-doors.png" alt="" className="logo-img" />
-          <span>Doors</span>
+          <img src="Images\footer-bg.png" alt="" className="logo-img" />
         </div>
         <div className="dash-content">
           <p onClick={scrollSection}>HOME</p>
@@ -67,13 +66,12 @@ export default function Dashboard() {
                 .getElementById("about")
                 .scrollIntoView({ behavior: "smooth" });
             }}>ABOUT US</p>
-          <p onClick={() => {
+          {/* <p onClick={() => {
               document
                 .getElementById("blog")
                 .scrollIntoView({ behavior: "smooth" });
-            }}>BLOG</p>
+            }}>BLOG</p> */}
           <p>CLIENTS</p>
-          <p>PRICING TABLE</p>
           <p onClick={() => {
               document
                 .getElementById("contact")
@@ -222,7 +220,7 @@ export default function Dashboard() {
         </div>
       </div>
 
-      <div className="blog" id="blog">
+      {/* <div className="blog" id="blog">
         <div className="o-heading">
           <p>BLOG</p>
           <p>
@@ -349,7 +347,7 @@ export default function Dashboard() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="contact" id="contact">
         <div className="o-heading">
