@@ -1,148 +1,439 @@
+import { useState } from "react";
 import "../css/dashboard.css";
 
 export default function Dashboard() {
+  const headData = [
+    {
+      id: 1,
+      title: "All",
+    },
+    {
+      id: 2,
+      title: "Video",
+    },
+    {
+      id: 3,
+      title: "Branding",
+    },
+    {
+      id: 4,
+      title: "Graphic",
+    },
+    {
+      id: 5,
+      title: "Web",
+    },
+    {
+      id: 6,
+      title: "Package",
+    },
+  ];
+
+  const [activeCard, setactiveCard] = useState("All");
+
   const scrollSection = () => {
-    document.getElementById("over").scrollIntoView({ behavior: "smooth" });
+    document.getElementById("home").scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <>
       <nav className="dash-nav">
         <div className="dash-logo">
-          <img src="Images\webLogo.svg" alt="" className="logo-img" />
+          <img src="Images\lg-doors.png" alt="" className="logo-img" />
+          <span>Doors</span>
         </div>
         <div className="dash-content">
-          <p onClick={scrollSection}>Overview</p>
-          <p onClick={()=>{document.getElementById("project").scrollIntoView({ behavior: "smooth" })}}>Project Highlights</p>
-          <p onClick={()=>{document.getElementById("config").scrollIntoView({ behavior: "smooth" })}}>Configurations</p>
-          <p>Amenities</p>
-          <p>Location Advantages & Map</p>
-          <p>Gallery</p>
-          <p>Floor Plans/Master Plan</p>
-        </div>
-        <div className="dash-contact">
-          <p>Contact Us</p>
+          <p onClick={scrollSection}>HOME</p>
+          <p
+            onClick={() => {
+              document
+                .getElementById("project")
+                .scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            SERVICE
+          </p>
+          <p
+            onClick={() => {
+              document
+                .getElementById("works")
+                .scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            WORKS
+          </p>
+          <p onClick={() => {
+              document
+                .getElementById("about")
+                .scrollIntoView({ behavior: "smooth" });
+            }}>ABOUT US</p>
+          <p onClick={() => {
+              document
+                .getElementById("blog")
+                .scrollIntoView({ behavior: "smooth" });
+            }}>BLOG</p>
+          <p>CLIENTS</p>
+          <p>PRICING TABLE</p>
+          <p onClick={() => {
+              document
+                .getElementById("contact")
+                .scrollIntoView({ behavior: "smooth" });
+            }}>CONTACT</p>
+          <img src="Images\search-w.svg" alt="" />
         </div>
       </nav>
 
-      <div className="dash-main">
-        <img src="Images\dash-bg.jpg" alt="" className="logo-img" />
-      </div>
-
-      <div className="overview" id="over">
-        <div className="o-text">
-          <p className="o-heading"> Where Lifestyle Meets Grandeur</p>
-          <p>
-            {" "}
-            Spread across 11.3 acres, Optima by Srijan Realty stands as the
-            grandest new entry in Rajarhat’s real estate landscape. With over
-            70% open space, this landmark development brings a refreshing blend
-            of nature and urban living to one of the city’s most vibrant
-            neighborhoods.
-          </p>
-          <p>
-            With over 1,400 spacious apartments, each thoughtfully designed with
-            two or more balconies, Optima ensures airy, light-filled homes that
-            redefine comfort and elevate daily living.
-          </p>
-          <p>
-            Residents can enjoy a vast leisure and entertainment zone, including
-            a 1,00,000 sq. ft. club house and podia, ensuring a balanced
-            lifestyle with a rich array of sports, fitness, and social amenities
-            designed for everyone.
-          </p>
-          <div className="enquire">
-            <p>2 & 3 BHKs Selling Fast. Enquire Now</p>
-          </div>
-        </div>
-        <div className="dash-img">
-          <img src="Images\dash-bg.jpg" alt="" className="logo-img" />
-        </div>
+      <div className="dash-main" id="home">
+        <img src="Images\bg-img.jpg" alt="" className="logo-img" />
       </div>
 
       <div className="project" id="project">
-        <p className="o-heading">Project Highlights</p>
+        <div className="o-heading">
+          <p>SERVICES</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.Molestias
+            ab blanditiis <br /> cumque quaerat neque reprehenderit quisquam
+          </p>
+        </div>
         <div className="o-grid">
           <div className="o-contain">
             <div>
-              <img src="Images\hotel-pic.svg" alt="" />
+              <img src="Images\wand.svg" alt="" />
             </div>
-            <span className="p-head">3 large connected podia</span>
+            <span className="p-head">Unlimited Colors</span>
             <p className="p-subhead">
-              with all future-ready useful amenities
-              <br /> and facilities
+              Praesent faucibus nisl sit nulla <br /> sollicitudin a sed purus.
             </p>
           </div>
           <div className="o-contain">
             <div>
-              <img src="Images\hotel-pic.svg" alt="" />
+              <img src="Images\wand.svg" alt="" />
             </div>
-            <span className="p-head">3 large connected podia</span>
+            <span className="p-head">Theme Options</span>
             <p className="p-subhead">
-              with all future-ready useful amenities
-              <br /> and facilities
+              voluptatem accusantium.Sed ut
+              <br /> perspiciatis unde omnis
             </p>
           </div>
           <div className="o-contain">
             <div>
-              <img src="Images\hotel-pic.svg" alt="" />
+              <img src="Images\wand.svg" alt="" />
             </div>
-            <span className="p-head">3 large connected podia</span>
+            <span className="p-head">SEO Friendly</span>
             <p className="p-subhead">
-              with all future-ready useful amenities
-              <br /> and facilities
+              Swine porchetta shank hamburger <br /> beef ribs turducken ground
             </p>
           </div>
           <div className="o-contain">
             <div>
-              <img src="Images\hotel-pic.svg" alt="" />
+              <img src="Images\wand.svg" alt="" />
             </div>
-            <span className="p-head">3 large connected podia</span>
+            <span className="p-head">Creative Design</span>
             <p className="p-subhead">
-              with all future-ready useful amenities
-              <br /> and facilities
+              Ground round fatback ribeye tail <br /> shank pork chop
             </p>
           </div>
         </div>
       </div>
 
-      <div className="config-section" id="config">
-        <div className="config">
-          <p className="o-heading">Configurations</p>
-          <div className="config-text">
-            Optima features 2BHK, 3BHK units ranging from 921 to 1,649 sq. ft.,
-            with each layout designed to maximize comfort and style, catering to{" "}
-            <br /> diverse lifestyle needs.
+      <div className="works" id="works">
+        <div className="o-heading">
+          <p>Recent Works</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.Molestias
+            ab blanditiis <br /> cumque quaerat neque reprehenderit quisquam
+          </p>
+        </div>
+        <div className="work-content">
+          <div className="work-head">
+            {headData.map((item) => (
+              <p
+                onClick={() => setactiveCard(item.title)}
+                key={item.id}
+                className={
+                  activeCard === item.title ? "head-tiltle" : "regular"
+                }
+              >
+                {item.title}
+              </p>
+            ))}
+          </div>
+
+          <div className="work-grid">
+            <img src="Images\mid-img1.jpg" alt="" className="grid-img" />
+            <img src="Images\mid-img2.jpg" alt="" className="grid-img" />
+            <img src="Images\mid-img3.jpg" alt="" className="grid-img" />
+            <img src="Images\mid-img4.jpg" alt="" className="grid-img" />
+            <img src="Images\mid-img4.jpg" alt="" className="grid-img" />
+            <img src="Images\mid-img3.jpg" alt="" className="grid-img" />
+            <img src="Images\mid-img2.jpg" alt="" className="grid-img" />
+            <img src="Images\mid-img1.jpg" alt="" className="grid-img" />
+          </div>
+        </div>
+      </div>
+
+      <div className="a-info" id="about">
+        <div className="o-heading">
+          <p>ABOUT US</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.Molestias
+            ab blanditiis <br /> cumque quaerat neque reprehenderit quisquam
+          </p>
+        </div>
+
+        <div className="a-grid">
+          <div className="a-contain">
+            <span className="p-head">Our Vision</span>
+            <p className="p-subhead">
+              His sumo verear torquatos et. Ad sint eripuit <br /> tractatos
+              sit. Affert dissentiet nec ut. Eos no
+              <br /> autem dolorem facilisi. Eu unum mucius
+              <br /> scripserit qui. Ipsum omnes voluptaria est id
+            </p>
+          </div>
+          <div className="a-contain">
+            <span className="p-head">Our Vision</span>
+            <p className="p-subhead">
+              His sumo verear torquatos et. Ad sint eripuit <br /> tractatos
+              sit. Affert dissentiet nec ut. Eos no
+              <br /> autem dolorem facilisi. Eu unum mucius
+              <br /> scripserit qui. Ipsum omnes voluptaria est id
+            </p>
+          </div>
+          <div className="a-contain">
+            <span className="p-head">Our Vision</span>
+            <p className="p-subhead">
+              His sumo verear torquatos et. Ad sint eripuit <br /> tractatos
+              sit. Affert dissentiet nec ut. Eos no
+              <br /> autem dolorem facilisi. Eu unum mucius
+              <br /> scripserit qui. Ipsum omnes voluptaria est id
+            </p>
           </div>
         </div>
 
-        <div className="config-img">
-          <div className="config-card">
-            <div className="con-img-container">
-              <img src="Images\con-img1.jpg" alt="" className="con-img"/>
-            </div>
-            <div className="config-info">   
-              <div className="config-tiltle">
-                <span>2 BHK</span>
-                <span>921 sq. ft to 936 sq. ft</span>
+        <div className="a-info">
+          <p className="t-title">Meet Our Team</p>
+          <div className="team-grid">
+            <img src="Images\member1.jpg" alt="" className="team-img" />
+            <img src="Images\member2.jpg" alt="" className="team-img" />
+            <img src="Images\member1.jpg" alt="" className="team-img" />
+            <img src="Images\member2.jpg" alt="" className="team-img" />
+          </div>
+        </div>
+      </div>
+
+      <div className="blog" id="blog">
+        <div className="o-heading">
+          <p>BLOG</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.Molestias
+            ab blanditiis <br /> cumque quaerat neque reprehenderit quisquam
+          </p>
+        </div>
+
+        <div className="blog-grid">
+          <div className="blog-contain">
+            <div className="blog-left">
+              <img src="Images\post1.jpg" alt="" className="blog-img" />
+              <div className="b-date">
+                <span className="date-head">24</span>
+                <span className="date-subhead">April</span>
               </div>
-              <div className="config-btn">
-                <span>check price</span>
+            </div>
+            <div className="blog-info">
+              <div className="blog-head">
+                <p>
+                  Standard post with
+                  <br /> preview picture
+                </p>
+              </div>
+              <div className="blog-subhead">
+                <p> Posted By: Admin</p>
+              </div>
+              <div className="blog-subhead">
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                </p>
+              </div>
+              <div className="read-btn">
+                <span>Read More</span>
               </div>
             </div>
           </div>
-          <div className="config-card">
-            <div className="con-img-container">
-              <img src="Images\con-img1.jpg" alt="" className="con-img"/>
+          <div className="blog-contain">
+            <div className="blog-left">
+              <img src="Images\post1.jpg" alt="" className="blog-img" />
+              <div className="b-date">
+                <span className="date-head">24</span>
+                <span className="date-subhead">April</span>
+              </div>
             </div>
-            <div className="config-info">   
-              <div className="config-tiltle">
-                <span>2 BHK</span>
-                <span>921 sq. ft to 936 sq. ft</span>
+            <div className="blog-info">
+              <div className="blog-head">
+                <p>
+                  Standard post with
+                  <br /> preview picture
+                </p>
               </div>
-              <div className="config-btn">
-                <span>check price</span>
+              <div className="blog-subhead">
+                <p> Posted By: Admin</p>
               </div>
+              <div className="blog-subhead">
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                </p>
+              </div>
+              <div className="read-btn">
+                <span>Read More</span>
+              </div>
+            </div>
+          </div>
+          <div className="blog-contain">
+            <div className="blog-left">
+              <img src="Images\post1.jpg" alt="" className="blog-img" />
+              <div className="b-date">
+                <span className="date-head">24</span>
+                <span className="date-subhead">April</span>
+              </div>
+            </div>
+            <div className="blog-info">
+              <div className="blog-head">
+                <p>
+                  Standard post with
+                  <br /> preview picture
+                </p>
+              </div>
+              <div className="blog-subhead">
+                <p> Posted By: Admin</p>
+              </div>
+              <div className="blog-subhead">
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                </p>
+              </div>
+              <div className="read-btn">
+                <span>Read More</span>
+              </div>
+            </div>
+          </div>
+          <div className="blog-contain">
+            <div className="blog-left">
+              <img src="Images\post1.jpg" alt="" className="blog-img" />
+              <div className="b-date">
+                <span className="date-head">24</span>
+                <span className="date-subhead">April</span>
+              </div>
+            </div>
+            <div className="blog-info">
+              <div className="blog-head">
+                <p>
+                  Standard post with
+                  <br /> preview picture
+                </p>
+              </div>
+              <div className="blog-subhead">
+                <p> Posted By: Admin</p>
+              </div>
+              <div className="blog-subhead">
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                </p>
+              </div>
+              <div className="read-btn">
+                <span>Read More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="contact" id="contact">
+        <div className="o-heading">
+          <p>CONTACT US</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.Molestias
+            ab blanditiis <br /> cumque quaerat neque reprehenderit quisquam
+          </p>
+        </div>
+        <div className="contact-grid">
+          <div className="contact-contain">
+            <p className="contact-title">Visit Our Office</p>
+            <div className="contact-div">
+              <div className="contact-info">
+                <img src="Images\location-red.svg" alt="" />
+                <span>Adress: 1234 Street Name, City Name</span>
+              </div>
+              <div className="contact-info">
+                <img src="Images\call.svg" alt="" />
+                <span>Phone: (123) 456-7890</span>
+              </div>
+              <div className="contact-info">
+                <img src="Images\mail.svg" alt="" />
+                <span> Email: tea@doors.com</span>
+              </div>
+            </div>
+          </div>
+          <div className="contact-contain">
+            <p className="contact-title">Business Hours</p>
+            <div className="contact-div">
+              <div className="contact-info">
+                <img src="Images\time.svg" alt="" />
+                <span>Mon. - Fri. 8am to 5pm</span>
+              </div>
+              <div className="contact-info">
+                <img src="Images\time.svg" alt="" />
+                <span>Sat. 8am to 11am</span>
+              </div>
+              <div className="contact-info">
+                <img src="Images\time.svg" alt="" />
+                <span> Sun. Closed</span>
+              </div>
+            </div>
+          </div>
+          <div className="contact-contain">
+            <p className="contact-title">Visit Our Office</p>
+            <div className="contact-div">
+              <div className="contact-field">
+                <input
+                  type="text"
+                  placeholder="Name"
+                />
+                <input type="text" placeholder="Email Id" />
+              </div>
+              <textarea name="" id="" placeholder="Your text" className="area-size"></textarea>
+              <div className="contact-submit">
+                <span>SUBMIT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="dash-footer">
+        <div className="footer-grid">
+          <div className="foot-img-contain">
+            <img src="Images\footer-bg.png" alt="" className="foot-img"/>
+          </div>
+          <div className="foot-info">
+            <span className="foot-info-head">Menu</span>
+            <div className="foot-info-subhead">
+              <p>About Us</p>
+              <p>Blog</p>
+              <p>Contact Us</p>
+            </div>
+          </div>
+          <div className="foot-info">
+            <span className="foot-info-head">Contact Info</span>
+            <div className="foot-info-subhead">
+              <p>info@usharajinfotech.com</p>
+              <p>
+                101 , Chandraghanta I-2/22 Keshavpuram , Awas Vikas No 1,
+                Kalyanpur, Kanpur - Uttar Pradesh
+              </p>
             </div>
           </div>
         </div>
