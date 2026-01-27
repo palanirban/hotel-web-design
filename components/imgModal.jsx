@@ -1,4 +1,4 @@
-import "./../src/css/imgModal.css";
+import "../src/css/imgModal.css";
 
 export default function ImgModal({ closeModal, imgSrc }) {
   return (
