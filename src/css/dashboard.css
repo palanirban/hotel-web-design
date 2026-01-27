@@ -133,6 +133,7 @@
 
 .grid-img {
   width: 100%;
+  cursor: pointer;
 }
 
 .a-info {
