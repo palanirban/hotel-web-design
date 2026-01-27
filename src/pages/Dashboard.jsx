@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../css/dashboard.css";
+import ImgModal from "../../components/imgModal";
 
 export default function Dashboard() {
   const headData = [
@@ -9,27 +10,72 @@ export default function Dashboard() {
     },
     {
       id: 2,
-      title: "Video",
+      title: "React",
     },
     {
       id: 3,
-      title: "Branding",
+      title: "React_Native",
     },
     {
       id: 4,
-      title: "Graphic",
+      title: "Flutter",
     },
     {
       id: 5,
-      title: "Web",
+      title: "Vue",
     },
     {
       id: 6,
-      title: "Package",
+      title: "Node",
     },
   ];
 
   const [activeCard, setactiveCard] = useState("All");
+
+  const workImages = {
+    All: [
+      "Images\\r1.jpg",
+      "Images\\r2.jpg",
+      "Images\\r3.jpg",
+      "Images\\r4.jpg",
+      "Images\\f1.jpg",
+      "Images\\f2.jpg",
+      "Images\\f3.jpg",
+      "Images\\f4.jpg",
+    ],
+    React: [
+      "Images\\r1.jpg",
+      "Images\\r2.jpg",
+      "Images\\r3.jpg",
+      "Images\\r4.jpg",
+    ],
+    React_Native: [
+      "Images\\rn1.jpg",
+      "Images\\rn2.jpg",
+      "Images\\rn3.jpg",
+      "Images\\rn4.jpg",
+    ],
+    Flutter: [
+      "Images\\f1.jpg",
+      "Images\\f2.jpg",
+      "Images\\f3.jpg",
+      "Images\\f4.jpg",
+    ],
+    Vue: [
+      "Images\\v3.jpg",
+      "Images\\v1.jpg",
+      "Images\\v2.jpg",
+      "Images\\v4.jpg",
+    ],
+    Node: [
+      "Images\\n1.jpg",
+      "Images\\n2.jpg",
+      "Images\\n3.jpg",
+      "Images\\n4.jpg",
+    ],
+  };
+
+  const [imginfo, setimginfo] = useState(false);
 
   const scrollSection = () => {
     document.getElementById("home").scrollIntoView({ behavior: "smooth" });
@@ -61,28 +107,36 @@ export default function Dashboard() {
           >
             WORKS
           </p>
-          <p onClick={() => {
+          <p
+            onClick={() => {
               document
                 .getElementById("about")
                 .scrollIntoView({ behavior: "smooth" });
-            }}>ABOUT US</p>
+            }}
+          >
+            ABOUT US
+          </p>
           {/* <p onClick={() => {
               document
                 .getElementById("blog")
                 .scrollIntoView({ behavior: "smooth" });
             }}>BLOG</p> */}
           <p>CLIENTS</p>
-          <p onClick={() => {
+          <p
+            onClick={() => {
               document
                 .getElementById("contact")
                 .scrollIntoView({ behavior: "smooth" });
-            }}>CONTACT</p>
+            }}
+          >
+            CONTACT
+          </p>
           <img src="Images\search-w.svg" alt="" />
         </div>
       </nav>
 
       <div className="dash-main" id="home">
-        <img src="Images\bg-img.jpg" alt="" className="logo-img" />
+        <img src="Images\web-logo.png" alt="" className="logo-img" />
       </div>
 
       <div className="project" id="project">
@@ -158,17 +212,17 @@ export default function Dashboard() {
           </div>
 
           <div className="work-grid">
-            <img src="Images\mid-img1.jpg" alt="" className="grid-img" />
-            <img src="Images\mid-img2.jpg" alt="" className="grid-img" />
-            <img src="Images\mid-img3.jpg" alt="" className="grid-img" />
-            <img src="Images\mid-img4.jpg" alt="" className="grid-img" />
-            <img src="Images\mid-img4.jpg" alt="" className="grid-img" />
-            <img src="Images\mid-img3.jpg" alt="" className="grid-img" />
-            <img src="Images\mid-img2.jpg" alt="" className="grid-img" />
-            <img src="Images\mid-img1.jpg" alt="" className="grid-img" />
+            {workImages[activeCard].map((img, index) => (
+              <img key={index} src={img} alt="" className="grid-img" onClick={()=> setimginfo(true)}/>
+            ))}
           </div>
         </div>
       </div>
+
+      {imginfo && (
+        <ImgModal closeModal={() => setimginfo(false)} imgSrc={"Images\\r1.jpg"} />   
+      )}
+      
 
       <div className="a-info" id="about">
         <div className="o-heading">
@@ -363,7 +417,12 @@ export default function Dashboard() {
             <div className="contact-div">
               <div className="contact-info">
                 <img src="Images\location-red.svg" alt="" />
-                <span>Adress: 1234 Street Name, City Name</span>
+                <span>
+                  Adress: 101 , Chandraghanta I-2/22
+                  <br /> Keshavpuram , Awas Vikas No 1,
+                  <br />
+                  Kalyanpur, Kanpur - Uttar Pradesh
+                </span>
               </div>
               <div className="contact-info">
                 <img src="Images\call.svg" alt="" />
@@ -371,7 +430,7 @@ export default function Dashboard() {
               </div>
               <div className="contact-info">
                 <img src="Images\mail.svg" alt="" />
-                <span> Email: tea@doors.com</span>
+                <span> Email: info@usharajinfotech.com</span>
               </div>
             </div>
           </div>
@@ -396,13 +455,15 @@ export default function Dashboard() {
             <p className="contact-title">Visit Our Office</p>
             <div className="contact-div">
               <div className="contact-field">
-                <input
-                  type="text"
-                  placeholder="Name"
-                />
+                <input type="text" placeholder="Name" />
                 <input type="text" placeholder="Email Id" />
               </div>
-              <textarea name="" id="" placeholder="Your text" className="area-size"></textarea>
+              <textarea
+                name=""
+                id=""
+                placeholder="Your text"
+                className="area-size"
+              ></textarea>
               <div className="contact-submit">
                 <span>SUBMIT</span>
               </div>
@@ -414,14 +475,38 @@ export default function Dashboard() {
       <div className="dash-footer">
         <div className="footer-grid">
           <div className="foot-img-contain">
-            <img src="Images\footer-bg.png" alt="" className="foot-img"/>
+            <img src="Images\footer-bg.png" alt="" className="foot-img" />
           </div>
           <div className="foot-info">
             <span className="foot-info-head">Menu</span>
             <div className="foot-info-subhead">
-              <p>About Us</p>
-              <p>Blog</p>
-              <p>Contact Us</p>
+              <p
+                onClick={() => {
+                  document
+                    .getElementById("about")
+                    .scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                About Us
+              </p>
+              <p
+                onClick={() => {
+                  document
+                    .getElementById("works")
+                    .scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                Works
+              </p>
+              <p
+                onClick={() => {
+                  document
+                    .getElementById("project")
+                    .scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                Services
+              </p>
             </div>
           </div>
           <div className="foot-info">

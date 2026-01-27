@@ -3,7 +3,7 @@
   width: 100%;
   display: flex;
   justify-content: space-around;
-  background-color: rgb(182, 7, 7);
+  background-color: rgb(9, 165, 157);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   align-items: center;
   color: white;
@@ -114,7 +114,7 @@
 
 .head-tiltle {
   padding: 4px 12px 4px 12px;
-  background-color: rgb(182, 7, 7);
+  background-color: rgb(9, 165, 157);
   color: white;
   cursor: pointer;
 }
@@ -315,7 +315,7 @@
 }
 
 .dash-footer{
-    background-color: rgb(182, 7, 7);
+    background-color: rgb(9, 165, 157);
 }
 
 .footer-grid{
@@ -353,4 +353,8 @@
 
 .foot-info-subhead{
     font-size: small;
+}
+
+.foot-info-subhead p{
+    cursor: pointer;
 }
