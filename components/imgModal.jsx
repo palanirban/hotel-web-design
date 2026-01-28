@@ -11,7 +11,7 @@ export default function ImgModal({ closeModal, imgSrc }) {
           <div className="img-modal-image">
             <img src={imgSrc} alt="Modal Content" className="modal-img"/>
           </div>
-          <p>
+          <p className="modal-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/> Est vel
             delectus iste possimus obcaecati eos,<br/> vero repellendus animi nihil
             ea blanditiis voluptatibus nam repudiandae excepturi exercitationem?

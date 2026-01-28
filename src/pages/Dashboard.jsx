@@ -3,6 +3,9 @@ import "../css/dashboard.css";
 import ImgModal from "../../components/imgModal";
 
 export default function Dashboard() {
+
+  const [isMobMenuOpen, setIsMobMenuOpen] = useState(false);
+
   const headData = [
     {
       id: 1,
@@ -133,7 +136,58 @@ export default function Dashboard() {
           </p>
           <img src="Images\search-w.svg" alt="" />
         </div>
+        <div className="d-menu" onClick={()=> setIsMobMenuOpen(!isMobMenuOpen)}>
+          <img src="Images\menu.svg" alt="" />
+        </div>
       </nav>
+
+      {isMobMenuOpen &&
+        (<div className="dash-mob-content">
+          <p onClick={scrollSection}>HOME</p>
+          <p
+            onClick={() => {
+              document
+                .getElementById("project")
+                .scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            SERVICE
+          </p>
+          <p
+            onClick={() => {
+              document
+                .getElementById("works")
+                .scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            WORKS
+          </p>
+          <p
+            onClick={() => {
+              document
+                .getElementById("about")
+                .scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            ABOUT US
+          </p>
+          {/* <p onClick={() => {
+              document
+                .getElementById("blog")
+                .scrollIntoView({ behavior: "smooth" });
+            }}>BLOG</p> */}
+          <p>CLIENTS</p>
+          <p
+            onClick={() => {
+              document
+                .getElementById("contact")
+                .scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            CONTACT
+          </p>
+        </div>
+      )}
 
       <div className="dash-main" id="home">
         <img src="Images\web-logo.png" alt="" className="logo-img" />
@@ -199,7 +253,7 @@ export default function Dashboard() {
         <div className="work-content">
           <div className="work-head">
             {headData.map((item) => (
-              <p
+              <span
                 onClick={() => setactiveCard(item.title)}
                 key={item.id}
                 className={
@@ -207,7 +261,7 @@ export default function Dashboard() {
                 }
               >
                 {item.title}
-              </p>
+              </span>
             ))}
           </div>
 

@@ -43,3 +43,17 @@
 .modal-img{
     width: 100%;
 }
+
+.modal-text{
+    font-size: small;
+}
+
+@media (max-width: 768px) {
+    .modal-img-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .img-modal-image{
+        width: 100%;
+    }
+}
