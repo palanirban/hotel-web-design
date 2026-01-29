@@ -5,6 +5,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Details from "./pages/Details";
 import Dashboard from "./pages/Dashboard";
+import ScrollSlider from "./pages/ScrollSlider";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/details" element={<Details />} />
+          <Route path="/scrollslider" element={<ScrollSlider />} />
         </Routes>
       </BrowserRouter>
     </>
