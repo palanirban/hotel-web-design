@@ -9,11 +9,20 @@ const cards = [
 
 export default function ScrollSlider() {
   const [cardStates, setCardStates] = useState({});
+  const [scrollPercent, setScrollPercent] = useState(0);
   const wrapperRef = useRef(null);
   const cardRefs = useRef({});
 
   useEffect(() => {
     const handleScroll = () => {
+      // Calculate scroll percentage
+      const scrollHeight =
+        document.documentElement.scrollHeight - window.innerHeight;
+      const scrolled = window.scrollY;
+      const percent =
+        scrollHeight > 0 ? Math.round((scrolled / scrollHeight) * 100) : 0;
+      setScrollPercent(percent);
+
       const newCardStates = {};
       // Dynamic scroll per card based on number of cards
       const totalScrollDistance = 2000; // Total scroll distance for all cards
@@ -27,19 +36,19 @@ export default function ScrollSlider() {
 
           // Position where card should start animating (bottom of viewport)
           const cardStartPosition = viewportHeight;
-          
+
           // Current position of card top in viewport
           const cardTopPosition = cardRect.top;
 
           // Calculate how much the card has scrolled into view
           const scrollDistance = cardStartPosition - cardTopPosition;
-          
+
           // Calculate progress (0 = not started, 1 = fully revealed)
           let cardProgress = scrollDistance / scrollPerCard;
-          
+
           // Clamp between 0 and 1
           const clampedProgress = Math.max(0, Math.min(1, cardProgress));
-          
+
           // Calculate translateX: starts at 50, ends at 0
           const translateX = 50 - clampedProgress * 50;
 
@@ -56,6 +65,19 @@ export default function ScrollSlider() {
     handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // const handleScrollButtonClick = () => {
+  //   // Scroll to the next 10% of the page
+  //   const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+  //   const nextScroll = window.scrollY + scrollHeight * 0.1;
+  //   window.scrollTo({ top: nextScroll, behavior: "smooth" });
+  // };
+
+  const handleScrollButtonClick = (e) => {
+    // Right click to scroll to top
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <>
@@ -109,8 +131,11 @@ export default function ScrollSlider() {
             <div className="s-left">
               <p>Our Solutions</p>
               <h2>Tailored Business Solutions for our Corporates.</h2>
-              <button>
-                <span>More services</span>
+              <button className="more-btn">
+                <span className="more-title">More services</span>
+                <div className="more-logo">
+                  <img src="Images\arrow.svg" alt="" className="more-img" />
+                </div>
               </button>
             </div>
             <div className="stack-wrapper" ref={wrapperRef}>
@@ -125,13 +150,19 @@ export default function ScrollSlider() {
                     ref={(el) => (cardRefs.current[card.id] = el)}
                     className="card stack-card"
                     style={{
-                      background: card.color,
+                      // background: card.color,
                       zIndex: cards.length - card.id,
                       width: "100%",
                       opacity: 1,
                       transform: `translateX(${state.translateX}%)`,
                     }}
                   >
+                    <div className="slider-left">
+                      <div className="s-slider-img">
+                        <img src="Images\google.svg" alt="" className="s-img" />
+                      </div>
+                      <p>Business Strategy Development</p>
+                    </div>
                     <h1>{card.title}</h1>
                   </div>
                 );
@@ -140,6 +171,29 @@ export default function ScrollSlider() {
           </div>
         </div>
       </div>
+
+      {scrollPercent > 0 && (
+        <div className="scroll-percent">
+          <button
+            className="scroll-btn"
+            onClick={handleScrollButtonClick}
+            // onContextMenu={handleScrollButtonRightClick}
+            title="Click to scroll down 10% | Right-click to scroll to top"
+            style={{
+              background: `conic-gradient(rgba(2, 59, 47, 0.8) 0deg ${scrollPercent * 3.6}deg, #e0e0e0 ${scrollPercent * 3.6}deg 360deg)`,
+              padding: "1.5px",
+            }}
+          >
+            <div className="scroll-btn-inner">
+              {scrollPercent < 95 ? (
+                <p>{scrollPercent}%</p>
+              ) : (
+                <img src="Images\up-arrow.svg" alt="" className="up-img"/>
+              )}
+            </div>
+          </button>
+        </div>
+      )}
     </>
   );
 }
